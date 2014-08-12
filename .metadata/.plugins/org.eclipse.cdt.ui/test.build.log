@@ -1,0 +1,257 @@
+
+**** Build of configuration Debug for project test ****
+
+make all 
+Building file: ../quaternion.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"quaternion.d" -MT"quaternion.d" -o "quaternion.o" "../quaternion.c"
+../quaternion.c:14:1: error: unknown type name ‘Quaternion’
+ Quaternion* getProduct(Quaternion* q1, Quaternion* q2);
+ ^
+../quaternion.c:14:24: error: unknown type name ‘Quaternion’
+ Quaternion* getProduct(Quaternion* q1, Quaternion* q2);
+                        ^
+../quaternion.c:14:40: error: unknown type name ‘Quaternion’
+ Quaternion* getProduct(Quaternion* q1, Quaternion* q2);
+                                        ^
+../quaternion.c:15:1: error: unknown type name ‘Quaternion’
+ Quaternion* getConjugate(Quaternion* q);
+ ^
+../quaternion.c:15:26: error: unknown type name ‘Quaternion’
+ Quaternion* getConjugate(Quaternion* q);
+                          ^
+../quaternion.c:16:20: error: unknown type name ‘Quaternion’
+ float getMagnitude(Quaternion* q);
+                    ^
+../quaternion.c:17:16: error: unknown type name ‘Quaternion’
+ void normalize(Quaternion* q);
+                ^
+../quaternion.c:18:1: error: unknown type name ‘Quaternion’
+ Quaternion* getNormalized(Quaternion* q);
+ ^
+../quaternion.c:18:27: error: unknown type name ‘Quaternion’
+ Quaternion* getNormalized(Quaternion* q);
+                           ^
+../quaternion.c:19:1: error: unknown type name ‘Quaternion’
+ Quaternion* construct_with_int_array(int32_t* data);
+ ^
+../quaternion.c:20:1: error: unknown type name ‘Quaternion’
+ Quaternion* construct_with_floats(float nw, float nx, float ny, float nz);
+ ^
+../quaternion.c:27:2: error: unknown type name ‘Quaternion’
+  Quaternion* (*getProduct)(Quaternion* q1, Quaternion* q2);
+  ^
+../quaternion.c:27:28: error: unknown type name ‘Quaternion’
+  Quaternion* (*getProduct)(Quaternion* q1, Quaternion* q2);
+                            ^
+../quaternion.c:27:44: error: unknown type name ‘Quaternion’
+  Quaternion* (*getProduct)(Quaternion* q1, Quaternion* q2);
+                                            ^
+../quaternion.c:28:2: error: expected ‘;’ before ‘Quaternion’
+  Quaternion* (*getConjugate)(Quaternion* q);
+  ^
+../quaternion.c:35:1: error: unknown type name ‘Quaternion’
+ Quaternion* getProduct(Quaternion* q1, Quaternion* q2) {
+ ^
+../quaternion.c:35:24: error: unknown type name ‘Quaternion’
+ Quaternion* getProduct(Quaternion* q1, Quaternion* q2) {
+                        ^
+../quaternion.c:35:40: error: unknown type name ‘Quaternion’
+ Quaternion* getProduct(Quaternion* q1, Quaternion* q2) {
+                                        ^
+../quaternion.c:43:1: error: unknown type name ‘Quaternion’
+ Quaternion* getConjugate(Quaternion* q) {
+ ^
+../quaternion.c:43:26: error: unknown type name ‘Quaternion’
+ Quaternion* getConjugate(Quaternion* q) {
+                          ^
+../quaternion.c:47:20: error: unknown type name ‘Quaternion’
+ float getMagnitude(Quaternion* q) {
+                    ^
+../quaternion.c:51:16: error: unknown type name ‘Quaternion’
+ void normalize(Quaternion* q) {
+                ^
+../quaternion.c:59:1: error: unknown type name ‘Quaternion’
+ Quaternion* getNormalized(Quaternion* q) {
+ ^
+../quaternion.c:59:27: error: unknown type name ‘Quaternion’
+ Quaternion* getNormalized(Quaternion* q) {
+                           ^
+../quaternion.c:65:1: error: unknown type name ‘Quaternion’
+ Quaternion* construct_default() {
+ ^
+../quaternion.c: In function ‘construct_default’:
+../quaternion.c:66:2: error: unknown type name ‘Quaternion’
+  Quaternion* q = malloc(sizeof(Quaternion));
+  ^
+../quaternion.c:66:32: error: ‘Quaternion’ undeclared (first use in this function)
+  Quaternion* q = malloc(sizeof(Quaternion));
+                                ^
+../quaternion.c:66:32: note: each undeclared identifier is reported only once for each function it appears in
+../quaternion.c:67:3: error: request for member ‘w’ in something not a structure or union
+  q->w = 1.0; q->x = 0.0; q->y = 0.0; q->z = 0.0;
+   ^
+../quaternion.c:67:15: error: request for member ‘x’ in something not a structure or union
+  q->w = 1.0; q->x = 0.0; q->y = 0.0; q->z = 0.0;
+               ^
+../quaternion.c:67:27: error: request for member ‘y’ in something not a structure or union
+  q->w = 1.0; q->x = 0.0; q->y = 0.0; q->z = 0.0;
+                           ^
+../quaternion.c:67:39: error: request for member ‘z’ in something not a structure or union
+  q->w = 1.0; q->x = 0.0; q->y = 0.0; q->z = 0.0;
+                                       ^
+../quaternion.c:68:3: error: request for member ‘getProduct’ in something not a structure or union
+  q->getProduct = getProduct;
+   ^
+../quaternion.c:68:18: error: ‘getProduct’ undeclared (first use in this function)
+  q->getProduct = getProduct;
+                  ^
+../quaternion.c:69:3: error: request for member ‘getConjugate’ in something not a structure or union
+  q->getConjugate = getConjugate;
+   ^
+../quaternion.c:69:20: error: ‘getConjugate’ undeclared (first use in this function)
+  q->getConjugate = getConjugate;
+                    ^
+../quaternion.c:70:3: error: request for member ‘normalize’ in something not a structure or union
+  q->normalize = normalize;
+   ^
+../quaternion.c:70:17: error: ‘normalize’ undeclared (first use in this function)
+  q->normalize = normalize;
+                 ^
+../quaternion.c:71:3: error: request for member ‘getNormalized’ in something not a structure or union
+  q->getNormalized = getNormalized;
+   ^
+../quaternion.c:71:21: error: ‘getNormalized’ undeclared (first use in this function)
+  q->getNormalized = getNormalized;
+                     ^
+../quaternion.c:72:3: error: request for member ‘getMagnitude’ in something not a structure or union
+  q->getMagnitude = getMagnitude;
+   ^
+../quaternion.c:72:20: error: ‘getMagnitude’ undeclared (first use in this function)
+  q->getMagnitude = getMagnitude;
+                    ^
+../quaternion.c: At top level:
+../quaternion.c:76:1: error: unknown type name ‘Quaternion’
+ Quaternion* construct_with_int_array(int32_t* data) {
+ ^
+../quaternion.c: In function ‘construct_with_int_array’:
+../quaternion.c:77:2: error: unknown type name ‘Quaternion’
+  Quaternion* q = malloc(sizeof(Quaternion));
+  ^
+../quaternion.c:77:32: error: ‘Quaternion’ undeclared (first use in this function)
+  Quaternion* q = malloc(sizeof(Quaternion));
+                                ^
+../quaternion.c:78:3: error: request for member ‘w’ in something not a structure or union
+  q->w = (float) data[0]/16384.0; q->x = (float) data[1]/16384.0;
+   ^
+../quaternion.c:78:35: error: request for member ‘x’ in something not a structure or union
+  q->w = (float) data[0]/16384.0; q->x = (float) data[1]/16384.0;
+                                   ^
+../quaternion.c:79:3: error: request for member ‘y’ in something not a structure or union
+  q->y = (float) data[2]/16384.0; q->z = (float) data[3]/16384.0;
+   ^
+../quaternion.c:79:35: error: request for member ‘z’ in something not a structure or union
+  q->y = (float) data[2]/16384.0; q->z = (float) data[3]/16384.0;
+                                   ^
+../quaternion.c:80:3: error: request for member ‘getProduct’ in something not a structure or union
+  q->getProduct = getProduct;
+   ^
+../quaternion.c:80:18: error: ‘getProduct’ undeclared (first use in this function)
+  q->getProduct = getProduct;
+                  ^
+../quaternion.c:81:3: error: request for member ‘getConjugate’ in something not a structure or union
+  q->getConjugate = getConjugate;
+   ^
+../quaternion.c:81:20: error: ‘getConjugate’ undeclared (first use in this function)
+  q->getConjugate = getConjugate;
+                    ^
+../quaternion.c:82:3: error: request for member ‘normalize’ in something not a structure or union
+  q->normalize = normalize;
+   ^
+../quaternion.c:82:17: error: ‘normalize’ undeclared (first use in this function)
+  q->normalize = normalize;
+                 ^
+../quaternion.c:83:3: error: request for member ‘getNormalized’ in something not a structure or union
+  q->getNormalized = getNormalized;
+   ^
+../quaternion.c:83:21: error: ‘getNormalized’ undeclared (first use in this function)
+  q->getNormalized = getNormalized;
+                     ^
+../quaternion.c:84:3: error: request for member ‘getMagnitude’ in something not a structure or union
+  q->getMagnitude = getMagnitude;
+   ^
+../quaternion.c:84:20: error: ‘getMagnitude’ undeclared (first use in this function)
+  q->getMagnitude = getMagnitude;
+                    ^
+../quaternion.c:85:2: error: unknown type name ‘reutrn’
+  reutrn q;
+  ^
+../quaternion.c:85:9: error: conflicting types for ‘q’
+  reutrn q;
+         ^
+../quaternion.c:77:14: note: previous definition of ‘q’ was here
+  Quaternion* q = malloc(sizeof(Quaternion));
+              ^
+../quaternion.c:85:9: warning: unused variable ‘q’ [-Wunused-variable]
+  reutrn q;
+         ^
+../quaternion.c: At top level:
+../quaternion.c:88:1: error: unknown type name ‘Quaternion’
+ Quaternion* construct_with_floats(float nw, float nx, float ny, float nz) {
+ ^
+../quaternion.c: In function ‘construct_with_floats’:
+../quaternion.c:89:2: error: unknown type name ‘Quaternion’
+  Quaternion* q = malloc(sizeof(Quaternion));
+  ^
+../quaternion.c:89:32: error: ‘Quaternion’ undeclared (first use in this function)
+  Quaternion* q = malloc(sizeof(Quaternion));
+                                ^
+../quaternion.c:90:3: error: request for member ‘w’ in something not a structure or union
+  q->w = nw; q->x = nx; q->y = ny; q->z = nz;
+   ^
+../quaternion.c:90:14: error: request for member ‘x’ in something not a structure or union
+  q->w = nw; q->x = nx; q->y = ny; q->z = nz;
+              ^
+../quaternion.c:90:25: error: request for member ‘y’ in something not a structure or union
+  q->w = nw; q->x = nx; q->y = ny; q->z = nz;
+                         ^
+../quaternion.c:90:36: error: request for member ‘z’ in something not a structure or union
+  q->w = nw; q->x = nx; q->y = ny; q->z = nz;
+                                    ^
+../quaternion.c:91:3: error: request for member ‘getProduct’ in something not a structure or union
+  q->getProduct = getProduct;
+   ^
+../quaternion.c:91:18: error: ‘getProduct’ undeclared (first use in this function)
+  q->getProduct = getProduct;
+                  ^
+../quaternion.c:92:3: error: request for member ‘getConjugate’ in something not a structure or union
+  q->getConjugate = getConjugate;
+   ^
+../quaternion.c:92:20: error: ‘getConjugate’ undeclared (first use in this function)
+  q->getConjugate = getConjugate;
+                    ^
+../quaternion.c:93:3: error: request for member ‘normalize’ in something not a structure or union
+  q->normalize = normalize;
+   ^
+../quaternion.c:93:17: error: ‘normalize’ undeclared (first use in this function)
+  q->normalize = normalize;
+                 ^
+../quaternion.c:94:3: error: request for member ‘getNormalized’ in something not a structure or union
+  q->getNormalized = getNormalized;
+   ^
+../quaternion.c:94:21: error: ‘getNormalized’ undeclared (first use in this function)
+  q->getNormalized = getNormalized;
+                     ^
+../quaternion.c:95:3: error: request for member ‘getMagnitude’ in something not a structure or union
+  q->getMagnitude = getMagnitude;
+   ^
+../quaternion.c:95:20: error: ‘getMagnitude’ undeclared (first use in this function)
+  q->getMagnitude = getMagnitude;
+                    ^
+../quaternion.c: In function ‘construct_with_int_array’:
+../quaternion.c:86:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [quaternion.o] Error 1
+
+**** Build Finished ****

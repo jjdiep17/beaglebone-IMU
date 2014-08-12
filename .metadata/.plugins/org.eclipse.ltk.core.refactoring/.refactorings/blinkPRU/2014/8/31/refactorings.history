@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;blinkPRU/blinkPRU.cpp&apos; to &apos;blinkPRU.c&apos;" description="Rename resource &apos;blinkPRU.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="blinkPRU.cpp" name="blinkPRU.c" stamp="1406935657539" updateReferences="true"/>
+</session>

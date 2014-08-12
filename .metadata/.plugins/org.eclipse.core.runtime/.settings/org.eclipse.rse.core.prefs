@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=jdiep
+useridperkey=ubuntu.BBB\=root;ubuntu.Local\=jdiep;ubuntu.BeagleBone\=root;ubuntu.Beaglebone-Ethernet\=root;

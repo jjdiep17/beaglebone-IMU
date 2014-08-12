@@ -1,0 +1,72 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/board.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/cpsw.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/ctlregcontext.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/dmtimer.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/edma.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/eeprom.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/gpio.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/hs_mmcsd.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/hsi2c.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/rtc.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/sysdelay.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/sysperf.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/timertick.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/uart.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/uartConsole.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/usb.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/watchdog.c 
+
+OBJS += \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/board.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/cpsw.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/ctlregcontext.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/dmtimer.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/edma.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/eeprom.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/gpio.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/hs_mmcsd.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/hsi2c.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/rtc.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/sysdelay.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/sysperf.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/timertick.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/uart.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/uartConsole.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/usb.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/watchdog.o 
+
+C_DEPS += \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/board.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/cpsw.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/ctlregcontext.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/dmtimer.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/edma.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/eeprom.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/gpio.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/hs_mmcsd.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/hsi2c.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/rtc.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/sysdelay.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/sysperf.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/timertick.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/uart.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/uartConsole.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/usb.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/watchdog.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/%.o: ../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,25 @@
+/*
+ * Quaternion.cpp
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+#include "Quaternion.h"
+
+Quaternion::Quaternion() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Quaternion::~Quaternion() {
+	// TODO Auto-generated destructor stub
+}
+
+
+Quaternion::Quaternion(float nw, float nx, float ny, float nz) {
+    w = nw;
+    x = nx;
+    y = ny;
+    z = nz;
+}

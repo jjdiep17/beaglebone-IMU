@@ -1,0 +1,69 @@
+/*
+ * blinkLibTest.cpp
+ *
+ *  Created on: Jul 14, 2014
+ *      Author: jdiep
+ */
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include "SimpleGPIO.h"
+using namespace std;
+#define MAX 64
+#define LEDPin 44
+#define buttonPin 46
+
+int flashGPIOLED(int, int);
+int readButton(int);
+
+int main() {
+
+	int flashCount = 0;
+
+	gpio_export(LEDPin);
+	gpio_export(buttonPin);
+
+	gpio_set_dir(LEDPin, OUTPUT_PIN);
+	gpio_set_dir(buttonPin, INPUT_PIN);
+
+	while(flashCount >= 0) {
+		if (readButton(buttonPin) == HIGH) {
+			flashGPIOLED(LEDPin, HIGH);
+			flashCount++;
+		}
+	}
+
+	gpio_unexport(LEDPin);
+	gpio_unexport(buttonPin);
+
+	return 0;
+}
+
+int flashGPIOLED(int GPIOPin, int onOff) {
+	// Turn on LED
+	if (onOff == HIGH) {
+		gpio_set_value(GPIOPin,HIGH); cout << "LED: ON" << endl;
+	} else {
+		gpio_set_value(GPIOPin,HIGH); cout << "LED: OFF" << endl;
+	}
+
+	// Unexport the pin
+	return 0;
+}
+
+int readButton(int inputPin) {
+	unsigned int GPIOValue;
+
+	// Read in the value of the pin
+	gpio_get_value(inputPin, &GPIOValue);
+	if(GPIOValue == HIGH)
+	{
+		cout << "Button Press" << endl;
+		gpio_unexport(inputPin);
+		return HIGH;
+	}
+	return LOW;
+}

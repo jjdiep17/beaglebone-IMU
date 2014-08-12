@@ -1,0 +1,16 @@
+#ifndef SENSOR_H
+#define SENSOR_H
+
+int ms_open();
+int ms_update();
+int ms_close();
+
+uint8_t GetGyro(int32_t *data, const uint8_t* packet);
+
+class sensor {
+public:
+	sensor();
+	virtual ~sensor();
+};
+#endif
+

@@ -1,0 +1,205 @@
+
+**** Build of configuration Debug for project Copy ****
+
+make all 
+Building target: Copy
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++ -L/usr/arm-linux-gnueabihf/lib -o "Copy"  ./MotionSensor/inv_mpu_lib/I2Cdev.o ./MotionSensor/inv_mpu_lib/inv_mpu.o ./MotionSensor/inv_mpu_lib/inv_mpu_dmp_motion_driver.o  ./MotionSensor/I2Cdev.o ./MotionSensor/inv_mpu.o ./MotionSensor/sensor.o  ./main.o   
+./MotionSensor/I2Cdev.o: In function `readBit':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:77: multiple definition of `readTimeout'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:77: first defined here
+./MotionSensor/I2Cdev.o: In function `readBit':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:77: multiple definition of `readBit'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:77: first defined here
+./MotionSensor/I2Cdev.o: In function `readByte':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:157: multiple definition of `readByte'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:157: first defined here
+./MotionSensor/I2Cdev.o: In function `readBitW':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:92: multiple definition of `readBitW'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:92: first defined here
+./MotionSensor/I2Cdev.o: In function `readWord':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:168: multiple definition of `readWord'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:168: first defined here
+./MotionSensor/I2Cdev.o: In function `readBits':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:108: multiple definition of `readBits'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:108: first defined here
+./MotionSensor/I2Cdev.o: In function `readBitsW':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:133: multiple definition of `readBitsW'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:133: first defined here
+./MotionSensor/I2Cdev.o: In function `readBytes':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:180: multiple definition of `readBytes'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:180: first defined here
+./MotionSensor/I2Cdev.o: In function `readWords':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:224: multiple definition of `readWords'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:224: first defined here
+./MotionSensor/I2Cdev.o: In function `writeBit':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:241: multiple definition of `writeBit'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:241: first defined here
+./MotionSensor/I2Cdev.o: In function `writeByte':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:326: multiple definition of `writeByte'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:326: first defined here
+./MotionSensor/I2Cdev.o: In function `writeBitW':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:255: multiple definition of `writeBitW'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:255: first defined here
+./MotionSensor/I2Cdev.o: In function `writeWord':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:336: multiple definition of `writeWord'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:336: first defined here
+./MotionSensor/I2Cdev.o: In function `writeBits':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:270: multiple definition of `writeBits'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:270: first defined here
+./MotionSensor/I2Cdev.o: In function `writeBitsW':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:299: multiple definition of `writeBitsW'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:299: first defined here
+./MotionSensor/I2Cdev.o: In function `writeBytes':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:347: multiple definition of `writeBytes'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:347: first defined here
+./MotionSensor/I2Cdev.o: In function `writeWords':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/I2Cdev.c:394: multiple definition of `writeWords'
+./MotionSensor/inv_mpu_lib/I2Cdev.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/I2Cdev.c:394: first defined here
+./MotionSensor/inv_mpu.o:(.rodata+0x0): multiple definition of `reg'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:(.rodata+0x0): first defined here
+./MotionSensor/inv_mpu.o:(.rodata+0x2c): multiple definition of `hw'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:(.rodata+0x2c): first defined here
+./MotionSensor/inv_mpu.o:(.rodata+0x3c): multiple definition of `test'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:(.rodata+0x3c): first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_reg_dump':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:608: multiple definition of `mpu_reg_dump'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:608: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_read_reg':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:633: multiple definition of `mpu_read_reg'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:633: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_init':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:655: multiple definition of `mpu_init'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:655: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_read_mem':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2280: multiple definition of `mpu_read_mem'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2280: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_gyro_fsr':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1104: multiple definition of `mpu_set_gyro_fsr'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1104: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_accel_fsr':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1171: multiple definition of `mpu_set_accel_fsr'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1171: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_lpf':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1246: multiple definition of `mpu_set_lpf'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1246: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_sample_rate':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1294: multiple definition of `mpu_set_sample_rate'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1294: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_configure_fifo':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1463: multiple definition of `mpu_configure_fifo'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1463: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_compass_sample_rate':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1366: multiple definition of `mpu_set_compass_sample_rate'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1366: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_sensors':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1527: multiple definition of `mpu_set_sensors'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1527: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_lp_accel_mode':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:808: multiple definition of `mpu_lp_accel_mode'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:808: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_int_latched':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1838: multiple definition of `mpu_set_int_latched'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1838: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_gyro_reg':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:899: multiple definition of `mpu_get_gyro_reg'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:899: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_accel_reg':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:919: multiple definition of `mpu_get_accel_reg'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:919: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_temperature':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:939: multiple definition of `mpu_get_temperature'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:939: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_accel_bias':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:962: multiple definition of `mpu_set_accel_bias'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:962: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_reset_fifo':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1011: multiple definition of `mpu_reset_fifo'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1011: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_gyro_fsr':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1076: multiple definition of `mpu_get_gyro_fsr'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1076: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_accel_fsr':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1142: multiple definition of `mpu_get_accel_fsr'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1142: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_lpf':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1209: multiple definition of `mpu_get_lpf'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1209: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_sample_rate':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1279: multiple definition of `mpu_get_sample_rate'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1279: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_compass_sample_rate':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1344: multiple definition of `mpu_get_compass_sample_rate'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1344: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_gyro_sens':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1388: multiple definition of `mpu_get_gyro_sens'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1388: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_accel_sens':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1415: multiple definition of `mpu_get_accel_sens'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1415: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_fifo_config':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1448: multiple definition of `mpu_get_fifo_config'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1448: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_power_state':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1508: multiple definition of `mpu_get_power_state'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1508: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_int_status':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1609: multiple definition of `mpu_get_int_status'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1609: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_read_fifo':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1638: multiple definition of `mpu_read_fifo'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1638: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_read_fifo_stream':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1726: multiple definition of `mpu_read_fifo_stream'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1726: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_bypass':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1773: multiple definition of `mpu_set_bypass'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1773: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_int_level':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:1826: multiple definition of `mpu_set_int_level'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:1826: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_run_self_test':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2140: multiple definition of `mpu_run_self_test'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2140: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_set_dmp_state':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2357: multiple definition of `mpu_set_dmp_state'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2357: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_write_mem':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2247: multiple definition of `mpu_write_mem'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2247: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_load_firmware':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2312: multiple definition of `mpu_load_firmware'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2312: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_dmp_state':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2399: multiple definition of `mpu_get_dmp_state'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2399: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_compass_reg':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2526: multiple definition of `mpu_get_compass_reg'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2526: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_get_compass_fsr':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2577: multiple definition of `mpu_get_compass_fsr'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2577: first defined here
+./MotionSensor/inv_mpu.o: In function `mpu_lp_motion_interrupt':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu.c:2632: multiple definition of `mpu_lp_motion_interrupt'
+./MotionSensor/inv_mpu_lib/inv_mpu.o:/home/jdiep/workspace/Copy/Debug/../MotionSensor/inv_mpu_lib/inv_mpu.c:2632: first defined here
+./MotionSensor/sensor.o: In function `ms_open()':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:55: undefined reference to `mpu_init(int_param_s*)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:60: undefined reference to `mpu_set_sensors(unsigned char)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:65: undefined reference to `mpu_set_gyro_fsr(unsigned short)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:70: undefined reference to `mpu_set_accel_fsr(unsigned char)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:76: undefined reference to `mpu_get_power_state(unsigned char*)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:81: undefined reference to `mpu_configure_fifo(unsigned char)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:88: undefined reference to `dmp_load_motion_driver_firmware()'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:94: undefined reference to `mpu_set_dmp_state(unsigned char)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:102: undefined reference to `dmp_enable_feature(unsigned short)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:109: undefined reference to `dmp_set_fifo_rate(unsigned short)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:114: undefined reference to `mpu_reset_fifo()'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:122: undefined reference to `dmp_read_fifo(short*, short*, int*, short*, unsigned char*)'
+./MotionSensor/sensor.o: In function `ms_update()':
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:136: undefined reference to `dmp_read_fifo(short*, short*, int*, short*, unsigned char*)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:141: undefined reference to `mpu_get_temperature(int*)'
+/home/jdiep/workspace/Copy/Debug/../MotionSensor/sensor.cpp:144: undefined reference to `mpu_get_compass_reg(short*)'
+collect2: error: ld returned 1 exit status
+make: *** [Copy] Error 1
+
+**** Build Finished ****

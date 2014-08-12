@@ -1,0 +1,41 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+O_SRCS := 
+C_SRCS := 
+S_UPPER_SRCS := 
+OBJ_SRCS := 
+ASM_SRCS := 
+OBJS := 
+C_DEPS := 
+EXECUTABLES := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+am335x_pru_package/pru_sw/utils/pasm_source/test \
+am335x_pru_package/pru_sw/utils/pasm_source \
+am335x_pru_package/pru_sw/old_example/PRU_semaphore \
+am335x_pru_package/pru_sw/old_example/PRU_pscConfig \
+am335x_pru_package/pru_sw/old_example/PRU_multiply \
+am335x_pru_package/pru_sw/old_example/PRU_miscOperations \
+am335x_pru_package/pru_sw/old_example/PRU_memAccessPRUDataRam \
+am335x_pru_package/pru_sw/old_example/PRU_memAccessL3andDDR \
+am335x_pru_package/pru_sw/old_example/PRU_memAccessL2 \
+am335x_pru_package/pru_sw/old_example/PRU_mem1DTransfer \
+am335x_pru_package/pru_sw/old_example/PRU_gpioToggle \
+am335x_pru_package/pru_sw/old_example/PRU_edmaConfig \
+am335x_pru_package/pru_sw/old_example/PRU_access_const_table \
+am335x_pru_package/pru_sw/old_example/PRU_PRUtoPRU_Interrupt \
+am335x_pru_package/pru_sw/old_example/PRU_PRUtoDSP_Interrupt \
+am335x_pru_package/pru_sw/old_example/PRU_DSPtoPRU_Interrupt \
+am335x_pru_package/pru_sw/example_apps/blinkled \
+am335x_pru_package/pru_sw/example_apps/PRU_memAccess_DDR_PRUsharedRAM \
+am335x_pru_package/pru_sw/example_apps/PRU_memAccessPRUDataRam \
+am335x_pru_package/pru_sw/example_apps/PRU_PRUtoPRU_Interrupt \
+am335x_pru_package/pru_sw/app_loader/interface \
+am335x_pru_package/pru_sw/app_loader/interface/debug \
+PRUSS_LIB/example \
+PRUSS_LIB/AM335X_StarterWare_02_00_01_01/platform/beaglebone \
+PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers \
+

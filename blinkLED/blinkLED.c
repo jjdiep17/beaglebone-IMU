@@ -1,0 +1,171 @@
+/*
+ * blinkLED.c
+ *
+ *  Created on: Jul 14, 2014
+ *      Author: jdiep
+ */
+
+/*********************************************************************
+ * This program will allow on to turn a given port on and off at a user
+ * defined rate.  The code was initially developed by Dingo_aus, 7 January 2009
+ * email: dingo_aus [at] internode <dot> on /dot/ net
+ * From http://www.avrfreaks.net/wiki/index.php/Documentation:LinuxGPIO#gpio_framework
+ *
+ * Created in AVR32 Studio (version 2.0.2) running on Ubuntu 8.04
+ * Modified by Mark A. Yoder, 21-July-2011
+ * Refactored and further modified by Walter Schilling, Summer 2012 and Winter 2013-2014.
+ */
+
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdint.h>
+
+#define SYSFS_GPIO_DIR "/sys/class/gpio"
+
+// create a variable to keep track of the port that is to be opened as a string.
+static char ioPort[56];
+
+/*******************************************************************************
+ * This method will setup the GPIO port to allow the user to perform output on the given port.
+ *
+ * @param uint32_t gpioPort - This is the number of the GPIO port that is to be opened.
+ *
+ ******************************************************************************/
+void setupIOPort(uint32_t gpioPort)
+{
+	FILE* fp;
+	//create a variable to store whether we are sending a '1' or a '0'
+	char set_value[5];
+
+	//Using sysfs we need to write the 3 digit gpio number to /sys/class/gpio/export
+	//This will create the folder /sys/class/gpio/gpio37
+	if ((fp = fopen(SYSFS_GPIO_DIR "/export", "ab")) == NULL)
+	{
+		printf("Cannot open export file.\n");
+		exit(1);
+	}
+
+	//Set pointer to beginning of the file
+	rewind(fp);
+
+	//Write the value of our GPIO port to the file.
+	sprintf(&set_value[0], "%d", gpioPort);
+	fwrite(&set_value, sizeof(char), 3, fp);
+	fclose(fp);
+
+	printf("...export file accessed, new pin now accessible\n");
+
+	//SET DIRECTION
+	//Open the LED's sysfs file in binary for reading and writing, store file pointer in fp
+	// Strat by creating a string representing the port that needs to be opened.
+	sprintf(&ioPort[0], "%s%s%d%s", SYSFS_GPIO_DIR, "/gpio", gpioPort, "/direction");
+
+	if ((fp = fopen(&ioPort[0], "rb+")) == NULL)
+	{
+		printf("Cannot open direction file.\n");
+		exit(1);
+	}
+
+	//Set pointer to beginning of the file
+	rewind(fp);
+
+	//Write our value of "out" to the file
+	strcpy(set_value,"out");
+	fwrite(&set_value, sizeof(char), 3, fp);
+	fclose(fp);
+	printf("...direction set to output\n");
+}
+
+/*******************************************************************************
+ * This method will blink a given light a number of times at a given rate.
+ *
+ * @param  FILE *fp - This is a pointer to the io device driver which will be manipulated to
+ *              turn the LED on and off.
+ * @param  uint32_t onOffTime - This is the length of time that the led is to either be turned on or turned off.
+ *              It is given in nanoseconds.
+ * @param  uint32_t numberOfBlinks - This is the number of on-off cycles that shall occur before the loop exits.
+ ******************************************************************************/
+void blinkLight(FILE *fp, uint32_t onOffTime, uint32_t numberOfBlinks)
+{
+	//Integer to keep track of whether we want on or off
+	uint8_t toggle = 0;
+	//create a variable to store whether we are sending a '1' or a '0'
+	char set_value[5];
+
+	//Run an infinite loop - will require Ctrl-C to exit this program
+	while(numberOfBlinks > 0)
+	{
+		toggle = !toggle;
+		if(toggle)
+		{
+			//Set pointer to beginning of the file
+			rewind(fp);
+			//Write our value of "1" to the file
+			strcpy(set_value,"1");
+			fwrite(&set_value, sizeof(char), 1, fp);
+			fflush(fp);
+			printf("...value set to 1...\n");
+		}
+		else
+		{
+			//Set pointer to beginning of the file
+			rewind(fp);
+			//Write our value of "0" to the file
+			strcpy(set_value,"0");
+			fwrite(&set_value, sizeof(char), 1, fp);
+			fflush(fp);
+			printf("...value set to 0...\n");
+		}
+		//Pause for a while
+		usleep(onOffTime);
+		numberOfBlinks--;
+	}
+}
+
+/**
+ * This is the main method for this program.  It will cause the LED to blink at the given rate.
+ */
+
+int main(int argc, char** argv)
+{
+	/* This variable is a file pointer to the file interface for the GPIO device driver
+	   which controls the output pin. */
+	FILE *fp = NULL;
+	uint32_t onOffTime = 500000;	// Time in micro sec to keep the signal on/off
+	uint8_t gpioPort = 44;   // This is the GPIO port that is to be used for this program.
+	uint32_t numberOfBlinks = 25;
+
+	if (argc < 4) {
+		printf("Usage: %s <port number> <on/off time in us> <Number of blinks>\n\n", argv[0]);
+		printf("Waits for a change in the GPIO pin voltage level or input on stdin\n");
+		exit(-1);
+	}
+
+	// Convert the input into the appropriate parameters.
+    gpioPort = atoi(argv[1]);
+	onOffTime = atoi(argv[2]);
+	numberOfBlinks = atoi(argv[3]);
+
+	printf("\n*********************************\n"
+		"*  Welcome to PIN Blink program  *\n"
+		"*  ....blinking gpio %d         *\n"
+		"*  ....period of %d us.........*\n"
+		"**********************************\n", gpioPort, 2*onOffTime);
+
+	setupIOPort(gpioPort);
+
+	sprintf(&ioPort[0], "%s%s%d%s", SYSFS_GPIO_DIR, "/gpio", gpioPort, "/value");
+
+	if ((fp = fopen(&ioPort[0], "rb+")) == NULL)
+	{
+		printf("Cannot open value file.\n");
+		exit(1);
+	}
+
+    blinkLight(fp, onOffTime, numberOfBlinks);
+
+	fclose(fp);
+	return 0;
+}

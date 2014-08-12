@@ -1,0 +1,86 @@
+/*
+ * quaternion.c
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+
+#include <math.h>
+#include <stdio.h>
+
+typedef struct Quaternion {
+	float w;
+	float x;
+	float y;
+	float z;
+	Quaternion* (*getProduct)(Quaternion* q1, Quaternion* q2);
+	Quaternion* (*getConjugate)(Quaternion* q);
+	float (*getMagnitude)(Quaternion* q);
+	void (*normalize)(Quaternion* q);
+	Quaternion* (*getNormalized)(Quaternion* q);
+} q;
+
+Quaternion* getProduct(Quaternion* q1, Quaternion* q2) {
+	float nw = (q1->w * q2->w) - (q1->x * q2->x) - (q1->y * q2->y) - (q1->z * q2->z);
+	float nx = (q1->w * q2->x) + (q1->x * q2->w) + (q1->y * q2->z) + (q1->z * q2->y);
+	float ny = (q1->w * q2->y) - (q1->x * q2->z) + (q1->y * q2->w) + (q1->z * q2->x);
+	float nz = (q1->w * q2->z) + (q1->x * q2->y) - (q1->y * q2->x) + (q1->z * q2->w);
+	return construct_with_floats(nw, nx, ny, nz);
+}
+
+Quaternion* getConjugate(Quaternion* q) {
+	return construct_with_floats(q->w, -q->x, -q->y, -q_->z);
+}
+
+float getMagnitude(Quaternion* q) {
+	return sqrt((q->w * q->w) + (q->x * q->x) + (q->y * q->y) + (q->z * q->z));
+}
+
+void normalize(Quaternion* q) {
+	 float m = getMagnitude();
+      q->w /= m;
+      q->x /= m;
+      q->y /= m;
+      q->z /= m;
+}
+
+Quaternion* getNormalized(Quaternion* q) {
+	Quaternion* r = construct_with_floats(q->w, q->x, q->y, q_->z);
+	r = normalize(r);
+	return r;
+}
+
+Quaternion* construct_default() {
+	Quaternion* q = malloc(sizeof(Quaternion));
+	q->w = 1.0; q->x = 0.0; q->y = 0.0; q->z = 0.0;
+	q->getProduct = getProduct;
+	q->getConjugate = getConjugate;
+	q->normalize = normalize;
+	q->getNormalized = getNormalized;
+	q->getMagnitude = getMagnitude;
+	return q;
+}
+
+Quaternion* construct_with_int_array(int32_t* data) {
+	Quaternion* q = malloc(sizeof(Quaternion));
+	q->w = (float) data[0]/16384.0; q->x = (float) data[1]/16384.0;
+	q->y = (float) data[2]/16384.0; q->z = (float) data[3]/16384.0;
+	q->getProduct = getProduct;
+	q->getConjugate = getConjugate;
+	q->normalize = normalize;
+	q->getNormalized = getNormalized;
+	q->getMagnitude = getMagnitude;
+	reutrn q;
+}
+
+Quaternion* construct_with_floats(float nw, float nx, float ny, float nz) {
+	Quaternion* q = malloc(sizeof(Quaternion));
+	q->w = nw; q->x = nx; q->y = ny; q->z = nz;
+	q->getProduct = getProduct;
+	q->getConjugate = getConjugate;
+	q->normalize = normalize;
+	q->getNormalized = getNormalized;
+	q->getMagnitude = getMagnitude;
+	return q;
+}

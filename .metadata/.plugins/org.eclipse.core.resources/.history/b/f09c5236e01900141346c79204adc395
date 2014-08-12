@@ -1,0 +1,51 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../blinkPRU.c \
+../pasm.c \
+../pasmdot.c \
+../pasmexp.c \
+../pasmmacro.c \
+../pasmop.c \
+../pasmpp.c \
+../pasmstruct.c \
+../path_utils.c \
+../prussdrv.c 
+
+OBJS += \
+./blinkPRU.o \
+./pasm.o \
+./pasmdot.o \
+./pasmexp.o \
+./pasmmacro.o \
+./pasmop.o \
+./pasmpp.o \
+./pasmstruct.o \
+./path_utils.o \
+./prussdrv.o 
+
+C_DEPS += \
+./blinkPRU.d \
+./pasm.d \
+./pasmdot.d \
+./pasmexp.d \
+./pasmmacro.d \
+./pasmop.d \
+./pasmpp.d \
+./pasmstruct.d \
+./path_utils.d \
+./prussdrv.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+%.o: ../%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

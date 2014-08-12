@@ -1,0 +1,65 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include am335x_pru_package/pru_sw/utils/pasm_source/test/subdir.mk
+-include am335x_pru_package/pru_sw/utils/pasm_source/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_timer0Interrupt/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_timer0Config/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_semaphore/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_pscConfig/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_multiply/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_miscOperations/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_memAccessPRUDataRam/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_memAccessL3andDDR/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_memAccessL2/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_mem1DTransfer/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_gpioToggle/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_edmaConfig/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_access_const_table/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_PRUtoPRU_Interrupt/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_PRUtoDSP_Interrupt/subdir.mk
+-include am335x_pru_package/pru_sw/old_example/PRU_DSPtoPRU_Interrupt/subdir.mk
+-include am335x_pru_package/pru_sw/example_apps/PRU_memAccess_DDR_PRUsharedRAM/subdir.mk
+-include am335x_pru_package/pru_sw/example_apps/PRU_memAccessPRUDataRam/subdir.mk
+-include am335x_pru_package/pru_sw/example_apps/PRU_PRUtoPRU_Interrupt/subdir.mk
+-include am335x_pru_package/pru_sw/app_loader/interface/subdir.mk
+-include subdir.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+
+# All Target
+all: blinkPRU
+
+# Tool invocations
+blinkPRU: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: Cross GCC Linker'
+	arm-linux-gnueabihf-gcc  -o "blinkPRU" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) blinkPRU
+	-@echo ' '
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets

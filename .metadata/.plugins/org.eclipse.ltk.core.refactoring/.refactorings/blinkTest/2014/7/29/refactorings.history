@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;blinkTest/blinkLibTest.cpp&apos; to &apos;blinkButtonTest.cpp&apos;" description="Rename resource &apos;blinkLibTest.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="blinkLibTest.cpp" name="blinkButtonTest.cpp" stamp="1405527961116" updateReferences="true"/>
+</session>

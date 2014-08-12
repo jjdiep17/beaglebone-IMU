@@ -1,0 +1,17 @@
+/*
+ * VectorInt16.h
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+#ifndef VECTORINT16_H_
+#define VECTORINT16_H_
+
+class VectorInt16 {
+public:
+	VectorInt16();
+	virtual ~VectorInt16();
+};
+
+#endif /* VECTORINT16_H_ */

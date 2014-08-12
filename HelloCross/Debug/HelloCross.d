@@ -1,0 +1,1 @@
+HelloCross.d: ../HelloCross.cpp

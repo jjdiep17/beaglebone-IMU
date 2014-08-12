@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../am335x_pru_package/pru_sw/old_example/PRU_pscConfig/PRU_pscConfig.c 
+
+OBJS += \
+./am335x_pru_package/pru_sw/old_example/PRU_pscConfig/PRU_pscConfig.o 
+
+C_DEPS += \
+./am335x_pru_package/pru_sw/old_example/PRU_pscConfig/PRU_pscConfig.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+am335x_pru_package/pru_sw/old_example/PRU_pscConfig/%.o: ../am335x_pru_package/pru_sw/old_example/PRU_pscConfig/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

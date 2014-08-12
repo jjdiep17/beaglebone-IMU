@@ -1,0 +1,63 @@
+
+**** Build of configuration Debug for project MotionSensorExample ****
+
+make all 
+Building file: ../MotionSensor/sensor.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -I/usr/arm-linux-gnueabihf/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MotionSensor/sensor.d" -MT"MotionSensor/sensor.d" -o "MotionSensor/sensor.o" "../MotionSensor/sensor.c"
+In file included from ../MotionSensor/sensor.c:12:0:
+../MotionSensor/sensor.h:8:20: error: unknown type name ‘VectorFloat’
+ uint8_t GetGravity(VectorFloat *v, Quaternion *q);
+                    ^
+../MotionSensor/sensor.h:8:36: error: unknown type name ‘Quaternion’
+ uint8_t GetGravity(VectorFloat *v, Quaternion *q);
+                                    ^
+../MotionSensor/sensor.h:9:38: error: unknown type name ‘Quaternion’
+ uint8_t GetYawPitchRoll(float *data, Quaternion *q, VectorFloat *gravity); 
+                                      ^
+../MotionSensor/sensor.h:9:53: error: unknown type name ‘VectorFloat’
+ uint8_t GetYawPitchRoll(float *data, Quaternion *q, VectorFloat *gravity); 
+                                                     ^
+../MotionSensor/sensor.c: In function ‘ms_open’:
+../MotionSensor/sensor.c:49:2: error: ‘for’ loop initial declarations are only allowed in C99 mode
+  for (int i=0;i<DIM;i++){
+  ^
+../MotionSensor/sensor.c:49:2: note: use option -std=c99 or -std=gnu99 to compile your code
+../MotionSensor/sensor.c: In function ‘ms_update’:
+../MotionSensor/sensor.c:137:4: error: incompatible types when assigning to type ‘struct Quaternion’ from type ‘int32_t *’
+  q = _q;
+    ^
+../MotionSensor/sensor.c:138:2: warning: implicit declaration of function ‘GetGravity’ [-Wimplicit-function-declaration]
+  GetGravity(&gravity, &q);
+  ^
+../MotionSensor/sensor.c:139:2: warning: implicit declaration of function ‘GetYawPitchRoll’ [-Wimplicit-function-declaration]
+  GetYawPitchRoll(ypr, &q, &gravity);
+  ^
+../MotionSensor/sensor.c:147:2: error: ‘for’ loop initial declarations are only allowed in C99 mode
+  for (int i=0;i<DIM;i++){
+  ^
+../MotionSensor/sensor.c:160:11: error: redefinition of ‘i’
+  for (int i=0;i<DIM;i++){
+           ^
+../MotionSensor/sensor.c:147:11: note: previous definition of ‘i’ was here
+  for (int i=0;i<DIM;i++){
+           ^
+../MotionSensor/sensor.c:160:2: error: ‘for’ loop initial declarations are only allowed in C99 mode
+  for (int i=0;i<DIM;i++){
+  ^
+../MotionSensor/sensor.c: At top level:
+../MotionSensor/sensor.c:173:9: error: conflicting types for ‘GetGravity’
+ uint8_t GetGravity(struct VectorFloat *v, struct Quaternion *q) {
+         ^
+../MotionSensor/sensor.c:138:2: note: previous implicit declaration of ‘GetGravity’ was here
+  GetGravity(&gravity, &q);
+  ^
+../MotionSensor/sensor.c:180:9: error: conflicting types for ‘GetYawPitchRoll’
+ uint8_t GetYawPitchRoll(float *data, struct Quaternion *q, struct VectorFloat *gravity) {
+         ^
+../MotionSensor/sensor.c:139:2: note: previous implicit declaration of ‘GetYawPitchRoll’ was here
+  GetYawPitchRoll(ypr, &q, &gravity);
+  ^
+make: *** [MotionSensor/sensor.o] Error 1
+
+**** Build Finished ****

@@ -1,0 +1,13 @@
+/*
+ * pruss_intc_mapping.h
+ *
+ *  Created on: Aug 1, 2014
+ *      Author: jdiep
+ */
+
+#ifndef PRUSS_INTC_MAPPING_H_
+#define PRUSS_INTC_MAPPING_H_
+
+
+
+#endif /* PRUSS_INTC_MAPPING_H_ */

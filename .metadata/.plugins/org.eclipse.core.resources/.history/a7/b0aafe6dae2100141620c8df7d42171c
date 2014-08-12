@@ -1,0 +1,46 @@
+/*
+ * Quaternion.h
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+#ifndef QUATERNION_H_
+#define QUATERNION_H_
+
+class Quaternion {
+public:
+	Quaternion();
+	virtual ~Quaternion();
+    float w;
+    float x;
+    float y;
+    float z;
+
+    Quaternion(float nw, float nx, float ny, float nz);
+
+    Quaternion getProduct(Quaternion q);
+
+    Quaternion getConjugate();
+
+    float getMagnitude() {
+        return sqrt(w*w + x*x + y*y + z*z);
+    }
+
+    void normalize() {
+        float m = getMagnitude();
+        w /= m;
+        x /= m;
+        y /= m;
+        z /= m;
+    }
+
+    Quaternion getNormalized() {
+        Quaternion r(w, x, y, z);
+        r.normalize();
+        return r;
+    }
+
+};
+
+#endif /* QUATERNION_H_ */

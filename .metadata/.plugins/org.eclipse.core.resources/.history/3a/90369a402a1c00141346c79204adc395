@@ -1,0 +1,84 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/cpsw.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/dcan.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/dmtimer.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/ecap.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/edma.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/ehrpwm.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/elm.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/gpio_v2.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/gpmc.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/hs_mmcsd.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/hsi2c.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mailbox.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mcasp.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mcspi.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mdio.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/phy.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/raster.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/rtc.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/tsc_adc.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/uart_irda_cir.c \
+../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/watchdog.c 
+
+OBJS += \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/cpsw.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/dcan.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/dmtimer.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/ecap.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/edma.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/ehrpwm.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/elm.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/gpio_v2.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/gpmc.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/hs_mmcsd.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/hsi2c.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mailbox.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mcasp.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mcspi.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mdio.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/phy.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/raster.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/rtc.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/tsc_adc.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/uart_irda_cir.o \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/watchdog.o 
+
+C_DEPS += \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/cpsw.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/dcan.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/dmtimer.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/ecap.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/edma.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/ehrpwm.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/elm.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/gpio_v2.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/gpmc.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/hs_mmcsd.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/hsi2c.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mailbox.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mcasp.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mcspi.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/mdio.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/phy.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/raster.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/rtc.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/tsc_adc.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/uart_irda_cir.d \
+./PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/watchdog.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/%.o: ../PRUSS_LIB/AM335X_StarterWare_02_00_01_01/drivers/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

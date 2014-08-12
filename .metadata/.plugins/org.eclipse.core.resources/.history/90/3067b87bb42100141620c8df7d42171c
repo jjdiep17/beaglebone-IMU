@@ -1,0 +1,19 @@
+/*
+ * VectorFloat.h
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+#ifndef VECTORFLOAT_H_
+#define VECTORFLOAT_H_
+
+class VectorFloat {
+public:
+	VectorFloat();
+	virtual ~VectorFloat();
+	
+	
+};
+
+#endif /* VECTORFLOAT_H_ */

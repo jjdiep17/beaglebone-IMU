@@ -1,0 +1,69 @@
+/*
+* The code is released under the GNU General Public License.
+* Developed by Mark Williams
+* A guide to this code can be found here; http://marks-space.com/2013/04/22/845/
+* Created 28th April 2013
+*/
+
+//works! Justin Diep
+
+#include <unistd.h>
+#include <math.h>
+#include <signal.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <string.h>
+#include <time.h>
+#include "I2Cdev/I2Cdev.h"
+
+int file;
+#define i2cAddr 		0x68
+#define PWR_MGMT_1 		0x6B
+#define ACCEL_XOUT_H 	0x3B
+#define ACCEL_XOUT_L 	0x3C
+
+#define X   0
+#define Y   1
+#define Z   2
+
+#define DT 0.02         // [s/loop] loop period. 20ms
+#define AA 0.98         // complementary filter constant
+
+#define A_GAIN 0.0573      // [deg/LSB]
+#define G_GAIN 0.070     // [deg/s/LSB]
+#define RAD_TO_DEG 57.29578
+#define M_PI 3.14159265358979323846
+
+
+
+int main() {
+
+	int i;
+	int raw;
+	int g;
+
+	uint8_t xoutH;
+	uint8_t xoutL;
+	if(!writeBit(i2cAddr, PWR_MGMT_1, 6, 0)) {
+		printf("Awake \n");
+		for (i = 0; i < 100; i++) {
+			xoutH = readBytes2(i2cAddr, ACCEL_XOUT_H, 1, &xoutH);
+			xoutL = readBytes2(i2cAddr, ACCEL_XOUT_L, 1, &xoutL);
+			raw = xoutH * 256 + xoutL;
+			g = raw / 16384;
+			printf("Accel value: %d\n", g);
+			usleep(200);
+		}
+	} else {
+		printf("Still asleep... \n");
+	}
+	return 0;
+
+
+};
+
+
+
+

@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project MotionSensorCpp ****
+
+make all 
+Building file: ../VectorInt16.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VectorInt16.d" -MT"VectorInt16.d" -o "VectorInt16.o" "../VectorInt16.cpp"
+Finished building: ../VectorInt16.cpp
+ 
+Building target: MotionSensorCpp
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "MotionSensorCpp"  ./inv_mpu_lib/I2Cdev/I2Cdev.o  ./inv_mpu_lib/inv_mpu.o ./inv_mpu_lib/inv_mpu_dmp_motion_driver.o  ./Quaternion.o ./VectorFloat.o ./VectorInt16.o   
+/usr/lib/gcc-cross/arm-linux-gnueabihf/4.8/../../../../arm-linux-gnueabihf/lib/../lib/crt1.o: In function `_start':
+(.text+0x30): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [MotionSensorCpp] Error 1
+
+**** Build Finished ****

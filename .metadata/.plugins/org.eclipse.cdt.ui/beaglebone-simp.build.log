@@ -1,0 +1,9 @@
+
+**** Build of configuration Default for project beaglebone-simp ****
+
+make all 
+ar -rc ./lib/libgpiommap.a src/gpio.o
+ar: ./lib/libgpiommap.a: No such file or directory
+make: *** [all] Error 1
+
+**** Build Finished ****

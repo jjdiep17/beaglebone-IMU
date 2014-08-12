@@ -1,0 +1,70 @@
+/*
+ * VectorFloat.h
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+#ifndef VECTORFLOAT_H_
+#define VECTORFLOAT_H_
+
+class VectorFloat {
+public:
+	VectorFloat();
+	virtual ~VectorFloat();
+	float x;
+	        float y;
+	        float z;
+	};
+	        VectorFloat() {
+	            x = 0;
+	            y = 0;
+	            z = 0;
+	        }
+
+	        VectorFloat(float nx, float ny, float nz) {
+	            x = nx;
+	            y = ny;
+	            z = nz;
+	        }
+
+	        float getMagnitude() {
+	            return sqrt(x*x + y*y + z*z);
+	        }
+
+	        void normalize() {
+	            float m = getMagnitude();
+	            x /= m;
+	            y /= m;
+	            z /= m;
+	        }
+
+	        VectorFloat getNormalized() {
+	            VectorFloat r(x, y, z);
+	            r.normalize();
+	            return r;
+	        }
+
+	        void rotate(Quaternion *q) {
+	            Quaternion p(0, x, y, z);
+
+	            // quaternion multiplication: q * p, stored back in p
+	            p = q -> getProduct(p);
+
+	            // quaternion multiplication: p * conj(q), stored back in p
+	            p = p.getProduct(q -> getConjugate());
+
+	            // p quaternion is now [0, x', y', z']
+	            x = p.x;
+	            y = p.y;
+	            z = p.z;
+	        }
+
+	        VectorFloat getRotated(Quaternion *q) {
+	            VectorFloat r(x, y, z);
+	            r.rotate(q);
+	            return r;
+	        }
+};
+
+#endif /* VECTORFLOAT_H_ */

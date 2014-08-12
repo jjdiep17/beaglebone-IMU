@@ -1,0 +1,17 @@
+/*
+ * Quaternion.h
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+#ifndef QUATERNION_H_
+#define QUATERNION_H_
+
+class Quaternion {
+public:
+	Quaternion();
+	virtual ~Quaternion();
+};
+
+#endif /* QUATERNION_H_ */

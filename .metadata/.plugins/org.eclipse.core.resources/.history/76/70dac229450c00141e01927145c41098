@@ -1,0 +1,65 @@
+/*
+ * blinkLibTest.cpp
+ *
+ *  Created on: Jul 14, 2014
+ *      Author: jdiep
+ */
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include "SimpleGPIO.h"
+using namespace std;
+#define MAX 64
+
+int flashGPIOLED(int, int);
+int readButton(int);
+
+int main() {
+	//readButton(117);
+	flashGPIOLED(44, 50);
+	return 0;
+}
+
+int flashGPIOLED(int GPIOPin, int times) {
+	cout << "GPIO Input Pin:" << GPIOPin << " start" << endl;
+
+		// Export the pin
+		gpio_export(GPIOPin);
+
+		// Set the direction of the pin
+		gpio_set_dir(GPIOPin, OUTPUT_PIN);
+
+		// Flash the LED int times
+		for(int i=0; i<(times*2); i++){
+			if(i%2==1) {gpio_set_value(GPIOPin,LOW); cout << "LED: OFF" << endl;}
+			else {gpio_set_value(GPIOPin,HIGH); cout << "LED: ON" << endl;}
+			usleep(100000);		//sleep for 1 millisecond
+		}
+
+		// Unexport the pin
+		gpio_unexport(GPIOPin);
+
+		cout << "GPIO LED Flash Pin:" << GPIOPin << " end" << endl;
+		return 0;
+}
+
+int readButton(int inputPin) {
+	cout << "GPIO Input Pin:" << inputPin << " start" << endl;
+	FILE *buttonHandle = NULL;
+	int GPIOValue;
+	// Export the pin
+	gpio_export(inputPin);
+
+	// Set the direction of the pin
+	gpio_set_dir(inputPin, INPUT_PIN);
+
+	// Read in the value of the pin
+	gpio_get_value(inputPin, &GPIOValue);
+
+	// Unexport the pin
+	gpio_unexport(inputPin);
+	return 0;
+}

@@ -1,0 +1,77 @@
+/*
+ * blinkLibTest.cpp
+ *
+ *  Created on: Jul 14, 2014
+ *      Author: jdiep
+ */
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include "SimpleGPIO.h"
+
+using namespace std;
+
+#define MAX 64
+#define LEDPin 44
+#define buttonPin 46
+
+int flashGPIOLED(int, int, int);
+int readButton(int, int);
+
+int main() {
+	unsigned int GPIOValue;
+
+	cout << "start" << endl;
+	// Export the pin
+	gpio_export(LEDPin);
+	gpio_export(buttonPin);
+
+	// Set the direction of the pin
+	gpio_set_dir(LEDPin, OUTPUT_PIN);
+	gpio_set_dir(buttonPin, INPUT_PIN);
+
+	int flashCount = 0;
+
+	while(flashCount >= 0) {
+		if (readButton(buttonPin) == HIGH) {
+			flashGPIOLED(LEDPin, 50, HIGH);
+			flashCount++;
+		} else {
+			flashGPIOLED(LEDPin, 50, LOW);
+		}
+	}
+
+	cout << "end" << endl;
+
+	// Unexport the pin
+	gpio_unexport(LEDPin);
+	gpio_unexport(buttonPin);
+	return 0;
+}
+
+int flashGPIOLED(int GPIOPin, int times, int onOff) {
+		// Turn on LED
+		if (onOff == HIGH) {
+			gpio_set_value(GPIOPin,HIGH); cout << "LED: ON" << endl;
+		} else {
+			gpio_set_value(GPIOPin,LOW); cout << "LED: OFF" << endl;
+		}
+
+		// Unexport the pin
+		// gpio_unexport(GPIOPin);
+		return 0;
+}
+
+int readButton(int inputPin, int GPIOValue) {
+	// Read in the value of the pin
+	gpio_get_value(inputPin, &GPIOValue);
+	if(prevState != GPIOValue && GPIOValue == HIGH)
+	{
+		cout << "Button Press" << endl;
+		return HIGH;
+	}
+	return LOW;
+}

@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project PRUSS-C ****
+
+make all 
+Building file: ../am335x_pru_package/pru_sw/app_loader/interface/prussdrv.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"am335x_pru_package/pru_sw/app_loader/interface/prussdrv.d" -MT"am335x_pru_package/pru_sw/app_loader/interface/prussdrv.d" -o "am335x_pru_package/pru_sw/app_loader/interface/prussdrv.o" "../am335x_pru_package/pru_sw/app_loader/interface/prussdrv.c"
+../am335x_pru_package/pru_sw/app_loader/interface/prussdrv.c:50:22: fatal error: prussdrv.h: No such file or directory
+ #include "prussdrv.h"
+                      ^
+compilation terminated.
+make: *** [am335x_pru_package/pru_sw/app_loader/interface/prussdrv.o] Error 1
+
+**** Build Finished ****

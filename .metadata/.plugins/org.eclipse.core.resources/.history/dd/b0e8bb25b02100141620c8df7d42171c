@@ -1,0 +1,22 @@
+/*
+ * Quaternion.cpp
+ *
+ *  Created on: Aug 11, 2014
+ *      Author: jdiep
+ */
+
+#include "Quaternion.h"
+#include "math.h"
+
+Quaternion::Quaternion() {
+	// TODO Auto-generated constructor stub
+
+}
+
+float getMagnitude() {
+        return sqrt(w*w + x*x + y*y + z*z);
+}
+
+Quaternion::~Quaternion() {
+	// TODO Auto-generated destructor stub
+}

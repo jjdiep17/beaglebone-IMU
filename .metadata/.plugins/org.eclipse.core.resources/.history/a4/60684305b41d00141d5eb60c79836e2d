@@ -1,0 +1,7 @@
+main.d: ../main.c ../L3G.h ../LSM303.h ../i2c-dev.h
+
+../L3G.h:
+
+../LSM303.h:
+
+../i2c-dev.h:

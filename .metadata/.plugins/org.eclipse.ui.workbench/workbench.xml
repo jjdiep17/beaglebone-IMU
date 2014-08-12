@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="17" version="2.0">
+<workbenchAdvisor/>
+<window height="830" maximized="true" width="1358" x="181" y="135">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="184" y="30"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.python.pydev.debug.actionSet" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="com.python.pydev.navigate.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="204" y="30"/>
+<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="106" y="30"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1406158763458" focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<info part="org.eclipse.ui.internal.EditorStack@52e59548">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="/home/jdiep/workspace/MotionSensorExampleBBB/main.c" title="main.c" tooltip="MotionSensorExampleBBB/main.c" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="153" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="inv_mpu.c" partName="inv_mpu.c" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/inv_mpu.c" title="inv_mpu.c" tooltip="MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/inv_mpu.c" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/inv_mpu.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1169" selectionTopPixel="561"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="sensor.c" partName="sensor.c" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor/sensor.c" title="sensor.c" tooltip="MotionSensorExampleBBB/MotionSensor/sensor.c" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor/sensor.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="383" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MotionSensor.h" partName="MotionSensor.h" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor.h" title="MotionSensor.h" tooltip="MotionSensorExampleBBB/MotionSensor.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="sensor.h" partName="sensor.h" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor/sensor.h" title="sensor.h" tooltip="MotionSensorExampleBBB/MotionSensor/sensor.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor/sensor.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="83" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="I2Cdev.c" partName="I2Cdev.c" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/I2Cdev/I2Cdev.c" title="I2Cdev.c" tooltip="MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/I2Cdev/I2Cdev.c" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/I2Cdev/I2Cdev.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="6814" selectionTopPixel="2431"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="helper_3dmath.h" partName="helper_3dmath.h" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor/helper_3dmath.h" title="helper_3dmath.h" tooltip="MotionSensorExampleBBB/MotionSensor/helper_3dmath.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor/helper_3dmath.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5134" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.cpp" partName="Quaternion.cpp" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor/Quaternion.cpp" title="Quaternion.cpp" tooltip="MotionSensorExampleBBB/MotionSensor/Quaternion.cpp" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor/Quaternion.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.h" partName="Quaternion.h" path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor/Quaternion.h" title="Quaternion.h" tooltip="MotionSensorExampleBBB/MotionSensor/Quaternion.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorExampleBBB/MotionSensor/Quaternion.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="126" selectionOffset="243" selectionTopPixel="154"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="VectorInt16.cpp" partName="VectorInt16.cpp" path="/home/jdiep/workspace/MotionSensorCpp/VectorInt16.cpp" title="VectorInt16.cpp" tooltip="MotionSensorCpp/VectorInt16.cpp" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorCpp/VectorInt16.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="VectorInt16.h" partName="VectorInt16.h" path="/home/jdiep/workspace/MotionSensorCpp/VectorInt16.h" title="VectorInt16.h" tooltip="MotionSensorCpp/VectorInt16.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorCpp/VectorInt16.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.h" partName="Quaternion.h" path="/home/jdiep/workspace/MotionSensorCpp/Quaternion.h" title="Quaternion.h" tooltip="MotionSensorCpp/Quaternion.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorCpp/Quaternion.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="157" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.cpp" partName="Quaternion.cpp" path="/home/jdiep/workspace/MotionSensorCpp/Quaternion.cpp" title="Quaternion.cpp" tooltip="MotionSensorCpp/Quaternion.cpp" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MotionSensorCpp/Quaternion.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="247" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="L3G.h" partName="L3G.h" path="/home/jdiep/workspace/Raspberry-Gyro-Acc/L3G.h" title="L3G.h" tooltip="Raspberry-Gyro-Acc/L3G.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Raspberry-Gyro-Acc/L3G.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="i2c-dev.h" partName="i2c-dev.h" path="/home/jdiep/workspace/Raspberry-Gyro-Acc/i2c-dev.h" title="i2c-dev.h" tooltip="Raspberry-Gyro-Acc/i2c-dev.h" workbook="org.eclipse.ui.internal.EditorStack@52e59548">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Raspberry-Gyro-Acc/i2c-dev.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2546"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.cdt.ui.CView" partName="C/C++ Projects">
+<viewState horizontalPosition="0" verticalPosition="0">
+<expanded>
+<element path="/home/jdiep/workspace/MotionSensorCpp"/>
+<element path="/home/jdiep/workspace/MotionSensorExampleBBB"/>
+<element path="/home/jdiep/workspace/MotionSensorExampleBBB/MotionSensor"/>
+</expanded>
+<selection>
+<element path="/home/jdiep/workspace/MotionSensorCpp/Quaternion.h"/>
+</selection>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ExecutableFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.SharedFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ClosedProjectFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.NonCProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.NonCElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ObjectFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.ui.CView_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ArchiveFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.ui.CView_patternFilterId_RemoteSystemsTempFiles" isEnabled="true"/>
+<child filterId="org.eclipse.cdt.ui.CView_patternFilterId_RemoteSystemsConnections" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.rse.ui.view.scratchpad.SystemScratchpadViewPart" partName="Remote Scratchpad"/>
+<view id="org.eclipse.rse.terminals.ui.view.TerminalView" partName="Terminals">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
+<view id="org.eclipse.rse.ui.view.systemView" partName="Remote Systems">
+<viewState horizontalPosition="0" linkWithEditor="f" release="2.0.0" showFilterPools="f" verticalPosition="0">
+<expanded>
+<element path="Conn///ubuntu.Local"/>
+<element path="Conn///ubuntu.BBB"/>
+<element path="Subs///ubuntu.BBB///ssh.files=Sftp Files"/>
+</expanded>
+<selection>
+<element path="Conn///ubuntu.BBB"/>
+</selection>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="897" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="637"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.rse.ui.view.systemTableView" partName="Remote System Details">
+<viewState columnWidths="" tableViewLockedID="true"/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="822" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.cdt.codan.internal.ui.views.ProblemDetails"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<show_in_time id="org.eclipse.cdt.ui.CView" time="1406247176177"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.ConvertToMakeWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewMakeFromExisting"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewCWizard1"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewCWizard2"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.rse.ui.view.systemView"/>
+<view id="org.eclipse.cdt.ui.CView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.rse.terminals.ui.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.cdt.ui.CView" appearance="2" expanded="2">
+<page content="org.eclipse.rse.ui.view.systemView" label="Remote Systems"/>
+<page content="org.eclipse.cdt.ui.CView" label="C/C++ Projects"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.23373102" ratioLeft="431" ratioRight="1413" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.7494781" ratioLeft="718" ratioRight="240" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.rse.terminals.ui.view.TerminalView" label="Terminals"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.7496393" ratioLeft="1039" ratioRight="347" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.rse.internal.ui.view.SystemPerspectiveLayout" id="org.eclipse.rse.ui.view.SystemPerspective" label="Remote System Explorer"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.rse.ui.view.systemView"/>
+<show_view_action id="org.eclipse.rse.ui.view.systemTableView"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<perspective_action id="org.eclipse.rse.ui.view.SystemPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.rse.ui.view.systemView"/>
+<view id="org.eclipse.rse.ui.view.systemTableView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.rse.ui.view.scratchpad.SystemScratchpadViewPart"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.rse.ui.view.NavFolder">&#x0A;<folder activePageID="org.eclipse.rse.ui.view.systemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.rse.ui.view.systemView" label="Remote Systems"/>
+<page content="org.eclipse.rse.ui.view.teamView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="org.eclipse.rse.ui.view.NavFolder">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.13015184" ratioLeft="240" ratioRight="1604" relationship="2" relative="org.eclipse.rse.ui.view.NavFolder"/>
+<info folder="true" part="org.eclipse.rse.ui.view.MiscFolder" ratio="0.5991649" ratioLeft="574" ratioRight="384" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.rse.ui.view.systemTableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.rse.ui.view.systemTableView" label="Remote System Details"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.rse.ui.view.OutlineFolder" ratio="0.7994228" ratioLeft="1108" ratioRight="278" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.rse.ui.view.PropertiesFolder" ratio="0.7494781" ratioLeft="718" ratioRight="240" relationship="4" relative="org.eclipse.rse.ui.view.NavFolder">&#x0A;<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.rse.ui.view.scratchpad.SystemScratchpadViewPart" label="Remote Scratchpad"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorExampleBBB/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/I2Cdev/I2Cdev.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Raspberry-Gyro-Acc-Inv/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/MotionSensorExampleBBB/README"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorExampleBBB/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorExampleBBB/MotionSensor/sensor.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorExampleBBB/MotionSensor/helper_3dmath.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorExampleBBB/MotionSensor/Quaternion.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorExampleBBB/MotionSensor/Quaternion.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorCpp/VectorInt16.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorCpp/Quaternion.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorCpp/Quaternion.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MotionSensorCpp/VectorInt16.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Raspberry-Gyro-Acc/L3G.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Raspberry-Gyro-Acc/i2c-dev.h"/>
+</editors>
+<item historyLabel="I2Cdev.c" index="1">
+<position info="not_deleted" x="16161" y="0"/>
+</item>
+<item historyLabel="I2Cdev.c" index="1">
+<position info="not_deleted" x="3517" y="8"/>
+</item>
+<item historyLabel="I2Cdev.c" index="1">
+<position info="not_deleted" x="6814" y="8"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="19" y="0"/>
+</item>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="README" index="3">
+<position info="not_deleted" x="522" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="19" y="0"/>
+</item>
+<item historyLabel="sensor.c" index="5">
+<position info="not_deleted" x="1245" y="7"/>
+</item>
+<item historyLabel="helper_3dmath.h" index="6">
+<position info="not_deleted" x="3013" y="0"/>
+</item>
+<item historyLabel="Quaternion.cpp" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="helper_3dmath.h" index="6">
+<position info="not_deleted" x="1688" y="79"/>
+</item>
+<item historyLabel="Quaternion.h" index="8">
+<position info="not_deleted" x="1338" y="0"/>
+</item>
+<item historyLabel="helper_3dmath.h" index="6">
+<position info="not_deleted" x="1771" y="1239"/>
+</item>
+<item historyLabel="Quaternion.h" index="8">
+<position info="not_deleted" x="412" y="0"/>
+</item>
+<item historyLabel="helper_3dmath.h" index="6">
+<position info="not_deleted" x="3022" y="11"/>
+</item>
+<item historyLabel="Quaternion.h" index="8">
+<position info="not_deleted" x="162" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="19" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="8">
+<position info="not_deleted" x="1061" y="4"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="helper_3dmath.h" index="6">
+<position info="not_deleted" x="1173" y="0"/>
+</item>
+<item historyLabel="VectorInt16.cpp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="VectorInt16.cpp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="8">
+<position info="not_deleted" x="243" y="126"/>
+</item>
+<item historyLabel="Quaternion.cpp" index="11">
+<position info="not_deleted" x="247" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="10">
+<position info="not_deleted" x="321" y="0"/>
+</item>
+<item historyLabel="Quaternion.cpp" index="11">
+<position info="not_deleted" x="247" y="0"/>
+</item>
+<item historyLabel="sensor.c" index="5">
+<position info="not_deleted" x="383" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="10">
+<position info="not_deleted" x="77" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="helper_3dmath.h" index="6">
+<position info="not_deleted" x="5134" y="0"/>
+</item>
+<item historyLabel="VectorInt16.cpp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="VectorInt16.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="VectorInt16.cpp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="10">
+<position info="not_deleted" x="77" y="0"/>
+</item>
+<item historyLabel="L3G.h" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="i2c-dev.h" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="VectorInt16.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="VectorInt16.cpp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="VectorInt16.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="VectorInt16.cpp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Quaternion.cpp" index="11">
+<position info="not_deleted" x="247" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="10">
+<position info="not_deleted" x="77" y="0"/>
+</item>
+<item historyLabel="Quaternion.h" index="10">
+<position/>
+</item>
+<item historyLabel="Quaternion.h" index="10">
+<position info="not_deleted" x="164" y="0"/>
+</item>
+<item historyLabel="helper_3dmath.h" index="6">
+<position info="not_deleted" x="5134" y="0"/>
+</item>
+<item active="true" historyLabel="Quaternion.h" index="10">
+<position info="not_deleted" x="164" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="i2c-dev.h" tooltip="Raspberry-Gyro-Acc/i2c-dev.h">
+<persistable path="/Raspberry-Gyro-Acc/i2c-dev.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="L3G.h" tooltip="Raspberry-Gyro-Acc/L3G.h">
+<persistable path="/Raspberry-Gyro-Acc/L3G.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.cpp" tooltip="MotionSensorCpp/Quaternion.cpp">
+<persistable path="/MotionSensorCpp/Quaternion.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.h" tooltip="MotionSensorCpp/Quaternion.h">
+<persistable path="/MotionSensorCpp/Quaternion.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="VectorInt16.h" tooltip="MotionSensorCpp/VectorInt16.h">
+<persistable path="/MotionSensorCpp/VectorInt16.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="VectorInt16.cpp" tooltip="MotionSensorCpp/VectorInt16.cpp">
+<persistable path="/MotionSensorCpp/VectorInt16.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.h" tooltip="MotionSensorExampleBBB/MotionSensor/Quaternion.h">
+<persistable path="/MotionSensorExampleBBB/MotionSensor/Quaternion.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Quaternion.cpp" tooltip="MotionSensorExampleBBB/MotionSensor/Quaternion.cpp">
+<persistable path="/MotionSensorExampleBBB/MotionSensor/Quaternion.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helper_3dmath.h" tooltip="MotionSensorExampleBBB/MotionSensor/helper_3dmath.h">
+<persistable path="/MotionSensorExampleBBB/MotionSensor/helper_3dmath.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Raspberry-Gyro-Acc-Inv/main.c">
+<persistable path="/Raspberry-Gyro-Acc-Inv/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2Cdev.c" tooltip="MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/I2Cdev/I2Cdev.c">
+<persistable path="/MotionSensorExampleBBB/MotionSensor/inv_mpu_lib/I2Cdev/I2Cdev.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sensor.h" tooltip="MotionSensorExampleBBB/MotionSensor/sensor.h">
+<persistable path="/MotionSensorExampleBBB/MotionSensor/sensor.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MotionSensor.h" tooltip="MotionSensorExample/MotionSensor.h">
+<persistable path="/MotionSensorExample/MotionSensor.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helper_3dmath.h" tooltip="MotionSensorExample/MotionSensor/helper_3dmath.h">
+<persistable path="/MotionSensorExample/MotionSensor/helper_3dmath.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sensor.c" tooltip="MotionSensorExample/MotionSensor/sensor.c">
+<persistable path="/MotionSensorExample/MotionSensor/sensor.c"/>
+</file>
+</mruList>
+</workbench>

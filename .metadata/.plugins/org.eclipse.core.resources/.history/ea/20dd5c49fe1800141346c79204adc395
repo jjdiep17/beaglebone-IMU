@@ -1,0 +1,30 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../MotionSensor/inv_mpu_lib/I2Cdev.c \
+../MotionSensor/inv_mpu_lib/inv_mpu.c \
+../MotionSensor/inv_mpu_lib/inv_mpu_dmp_motion_driver.c 
+
+OBJS += \
+./MotionSensor/inv_mpu_lib/I2Cdev.o \
+./MotionSensor/inv_mpu_lib/inv_mpu.o \
+./MotionSensor/inv_mpu_lib/inv_mpu_dmp_motion_driver.o 
+
+C_DEPS += \
+./MotionSensor/inv_mpu_lib/I2Cdev.d \
+./MotionSensor/inv_mpu_lib/inv_mpu.d \
+./MotionSensor/inv_mpu_lib/inv_mpu_dmp_motion_driver.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+MotionSensor/inv_mpu_lib/%.o: ../MotionSensor/inv_mpu_lib/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
